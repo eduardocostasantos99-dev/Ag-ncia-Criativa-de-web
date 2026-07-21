@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web | Design Digital & Desenvolvimento</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Fonte Google para um visual moderno -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,57 +13,51 @@
 <body>
 
     <!-- Cabeçalho e Navegação -->
-    <header class="main-header">
-        <div class="header-container">
-            <a href="#" class="logo">Criativa<span>Web</span></a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">Criativa<span class="header__logo-highlight">Web</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#servicos" class="nav__link">Serviços</a></li>
+                    <li class="nav__item"><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+                    <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Seção Home (Hero) -->
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>Transformamos ideias em <br><span class="highlight">experiências digitais</span></h1>
-                <p>Design moderno, desenvolvimento robusto e estratégias focadas no crescimento do seu negócio.</p>
-                <a href="#contato" class="btn-primary">Vamos Conversar?</a>
+       <!-- Seção Home (Hero) -->
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Transformamos ideias em <br><span class="hero__title-highlight">experiências digitais</span></h1>
+                <p class="hero__description">Design moderno, desenvolvimento robusto e estratégias focadas no crescimento do seu negócio.</p>
+                <a href="#contato" class="btn btn--primary">Vamos Conversar?</a>
             </div>
-            <div class="hero-image">
-                <!-- Imagem Responsiva com srcset -->
-                <picture>
-                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1542744094-2ab25be78b90?w=500&q=80">
-                    <source media="(max-width: 1200px)" srcset="https://images.unsplash.com/photo-1542744094-2ab25be78b90?w=1000&q=80">
-                    <img src="https://images.unsplash.com/photo-1542744094-2ab25be78b90?w=1400&q=80" alt="Equipe da agência trabalhando em design digital" class="responsive-img">
-                </picture>
+            <div class="hero__media">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Equipe de trabalho em design digital" class="responsive-img">
             </div>
         </section>
-
         <!-- Seção Sobre Nós -->
-        <section id="sobre" class="about-section">
+        <section id="sobre" class="about">
             <div class="container">
                 <div class="section-header">
-                    <h2>Sobre Nós</h2>
-                    <p>Conheça a mente por trás dos pixels.</p>
+                    <h2 class="section-header__title">Sobre Nós</h2>
+                    <p class="section-header__subtitle">Conheça a mente por trás dos pixels.</p>
                 </div>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h3>Criatividade sem limites, resultados reais.</h3>
+                <div class="about__wrapper">
+                    <div class="about__text">
+                        <h3 class="about__subtitle">Criatividade sem limites, resultados reais.</h3>
                         <p>Nascemos com o propósito de unir a estética do design com a precisão da tecnologia. Não criamos apenas sites ou marcas; construímos pontes digitais entre a sua empresa e o seu cliente final.</p>
                     </div>
-                    <div class="about-values">
-                        <div class="value-card">
+                    <div class="about__values">
+                        <div class="about__value-card">
                             <h4>Inovação</h4>
                             <p>Sempre um passo à frente nas tendências digitais.</p>
                         </div>
-                        <div class="value-card">
+                        <div class="about__value-card">
                             <h4>Foco no Cliente</h4>
                             <p>Seu sucesso é a métrica do nosso crescimento.</p>
                         </div>
@@ -72,95 +66,94 @@
             </div>
         </section>
 
-        <!-- Seção Serviços (Implementando CSS Grid) -->
-        <section id="servicos" class="services-section">
+        <!-- Seção Serviços -->
+        <section id="servicos" class="services">
             <div class="container">
                 <div class="section-header">
-                    <h2>Nossos Serviços</h2>
-                    <p>Soluções completas para posicionar sua marca no ecossistema digital.</p>
+                    <h2 class="section-header__title">Nossos Serviços</h2>
+                    <p class="section-header__subtitle">Soluções completas para posicionar sua marca no ecossistema digital.</p>
                 </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="icon">🎨</div>
-                        <h3>Design Gráfico</h3>
-                        <p>Identidades visuais marcantes, peças publicitárias e materiais que comunicam a essência da sua marca.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">💻</div>
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Sites, landing pages e e-commerces rápidos, seguros e totalmente otimizados para o Google.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">✨</div>
-                        <h3>Branding</h3>
-                        <p>Estratégia e posicionamento para fazer sua empresa se destacar e ser lembrada no mercado.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">📱</div>
-                        <h3>UI/UX Design</h3>
-                        <p>Criação de interfaces intuitivas focadas em oferecer a melhor experiência de navegação ao usuário.</p>
-                    </div>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">🎨</div>
+                        <h3 class="service-card__title">Design Gráfico</h3>
+                        <p class="service-card__description">Identidades visuais marcantes, peças publicitárias e materiais que comunicam a essência da sua marca.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">💻</div>
+                        <h3 class="service-card__title">Desenvolvimento Web</h3>
+                        <p class="service-card__description">Sites, landing pages e e-commerces rápidos, seguros e totalmente otimizados para o Google.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">✨</div>
+                        <h3 class="service-card__title">Branding</h3>
+                        <p class="service-card__description">Estratégia e posicionamento para fazer sua empresa se destacar e ser lembrada no mercado.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">📱</div>
+                        <h3 class="service-card__title">UI/UX Design</h3>
+                        <p class="service-card__description">Criação de interfaces intuitivas focadas em oferecer a melhor experiência de navegação ao usuário.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Seção Depoimentos -->
-        <section id="depoimentos" class="testimonials-section">
+        <section id="depoimentos" class="testimonials">
             <div class="container">
                 <div class="section-header">
-                    <h2>O que dizem nossos clientes</h2>
+                    <h2 class="section-header__title section-header__title--light">O que dizem nossos clientes</h2>
                 </div>
-                <div class="testimonials-container">
-                    <div class="testimonial-card">
-                        <p>"A Criativa Web transformou nossa presença online. Nossa taxa de conversão aumentou 45% após o novo design do site!"</p>
-                        <span class="client-name">— Carlos Silva, CEO da TechInova</span>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>"Atendimento impecável e entrega no prazo. Captaram perfeitamente a essência do nosso projeto de branding."</p>
-                        <span class="client-name">— Mariana Costa, Diretora da Studio M</span>
-                    </div>
+                <div class="testimonials__container">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__quote">"A Criativa Web transformou nossa presença online. Nossa taxa de conversão aumentou 45% após o novo design do site!"</p>
+                        <cite class="testimonial-card__author">— Carlos Silva, CEO da TechInova</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-card__quote">"Atendimento impecável e entrega no prazo. Captaram perfeitamente a essência do nosso projeto de branding."</p>
+                        <cite class="testimonial-card__author">— Mariana Costa, Diretora da Studio M</cite>
+                    </blockquote>
                 </div>
             </div>
         </section>
 
         <!-- Seção Contato -->
-        <section id="contato" class="contact-section">
+        <section id="contato" class="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2>Vamos iniciar seu projeto?</h2>
-                    <p>Entre em contato e descubra como podemos ajudar o seu negócio a decolar.</p>
+                    <h2 class="section-header__title">Vamos iniciar seu projeto?</h2>
+                    <p class="section-header__subtitle">Entre em contato e descubra como podemos ajudar o seu negócio a decolar.</p>
                 </div>
-                <div class="contact-wrapper">
+                <div class="contact__wrapper">
                     <!-- Informações -->
-                    <div class="contact-info">
-                        <h3>Informações de Contato</h3>
-                        <p>📍 Av. Paulista, 1000 - São Paulo/SP</p>
-                        <p>📞 (11) 99999-8888</p>
-                        <p>✉️ contato@criativaweb.com</p>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Informações de Contato</h3>
+                        <p class="contact__text">📍 Av. Paulista, 1000 - São Paulo/SP</p>
+                        <p class="contact__text">📞 (11) 99999-8888</p>
+                        <p class="contact__text">✉️ contato@criativaweb.com</p>
                     </div>
                     <!-- Formulário -->
                     <form class="contact-form">
-                        <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" required placeholder="Seu nome completo">
+                        <div class="contact-form__group">
+                            <label for="nome" class="contact-form__label">Nome</label>
+                            <input type="text" id="nome" class="contact-form__input" required placeholder="Seu nome completo">
                         </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" required placeholder="seu.email@empresa.com">
+                        <div class="contact-form__group">
+                            <label for="email" class="contact-form__label">E-mail</label>
+                            <input type="email" id="email" class="contact-form__input" required placeholder="seu.email@empresa.com">
                         </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" rows="5" required placeholder="Conte-nos um pouco sobre o seu projeto..."></textarea>
+                        <div class="contact-form__group">
+                            <label for="mensagem" class="contact-form__label">Mensagem</label>
+                            <textarea id="mensagem" class="contact-form__textarea" rows="5" required placeholder="Conte-nos um pouco sobre o seu projeto..."></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        <button type="submit" class="btn btn--dark btn--full">Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-
     <!-- Rodapé -->
-    <footer class="main-footer">
+    <footer class="footer">
         <p>&copy; 2026 Agência Criativa Web. Todos os direitos reservados.</p>
     </footer>
 

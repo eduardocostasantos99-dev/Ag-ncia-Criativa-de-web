@@ -1,0 +1,10 @@
+{
+  "name": "agencia-criativa-web",
+  "version": "1.0.0",
+  "scripts": {
+    "watch:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.101.7"
+  }
+}
